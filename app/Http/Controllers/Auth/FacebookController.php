@@ -26,10 +26,10 @@ class FacebookController extends Controller
      */
     public function handleProviderCallback()
     {
-    	$test = "test print";
-    	dd($test);
-       // $user = Socialite::driver('facebook')->user();
-       // dd($user);
+    	//$test = "test print";
+    	//dd($test);
+        $user = Socialite::driver('facebook')->user();
+        dd($user);
         // $user->token;
     }
 }
